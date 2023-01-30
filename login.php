@@ -80,5 +80,6 @@
             <img src="media/Log-ico/WhatsApp-logo.png" alt="whatsapp-logo">
         </a>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
