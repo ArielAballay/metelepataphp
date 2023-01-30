@@ -27,11 +27,15 @@
           <div class="contenedor">
               <img src="media/Log-ico/letra.png" alt="">
               <div class="menu">
-                  <nav>
-                      <a href="index.php">Inicio</a>
-                      <a href="#">Quienes Somos</a>
-                      <a href="#footer">Contacto</a>
-                  </nav>
+              <nav>
+                    <a href="index.php">Inicio</a>
+                    <a href="#footer">Contacto</a>              
+                    <?php if(!empty($user)): ?>                        
+                        <a href="logout.php" class="iniciar">Salir</a>
+                    <?php else: ?>
+                    <a href="login.php" class="iniciar">Entrar</a>
+                    <?php endif; ?>
+                </nav>
               </div>
               <i class="fa-solid fa-bars" id="icon__menu"></i>
           </div>
